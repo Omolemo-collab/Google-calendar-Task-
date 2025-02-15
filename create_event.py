@@ -11,7 +11,6 @@ SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 def get_credentials():
     creds = None
-    #i addded a gui
 
     if os.path.exists(r"C:\Python\Calendar_Project 2.0\CREDENTIALS\token.json"):
         creds = Credentials.from_authorized_user_file(r"C:\Python\Calendar_Project 2.0\CREDENTIALS\token.json")
@@ -77,6 +76,7 @@ def main():
     window.config(bg="black")
 
     # Entry fields for task details
+
     task_label = tk.Label(window, text="Task", bg='black', fg='white')
     task_label.pack(pady=5)
     task_input = tk.Entry(window, width=50,bg='black', fg='white')
