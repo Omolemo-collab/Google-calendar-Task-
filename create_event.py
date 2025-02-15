@@ -11,6 +11,7 @@ SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 def get_credentials():
     creds = None
+    #i addded a gui
 
     if os.path.exists(r"C:\Python\Calendar_Project 2.0\CREDENTIALS\token.json"):
         creds = Credentials.from_authorized_user_file(r"C:\Python\Calendar_Project 2.0\CREDENTIALS\token.json")
